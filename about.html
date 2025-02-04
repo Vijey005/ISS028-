@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Freelynk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Anonymous Pro', monospace;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+            color: black;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .blue {
+            color: #1E3A8A;
+        }
+
+        .green {
+            color: #34D399;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #34D399;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: slideUp 1s forwards;
+        }
+
+        .container p {
+            font-size: 18px;
+            color: gray;
+            margin-bottom: 40px;
+            animation: slideUp 1.2s forwards;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1E3A8A;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        ul {
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #1E3A8A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #34D399;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Slide-up animation */
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Smooth transition for navbar */
+        .navbar:hover {
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="blue">Free</span><span class="green">lynk</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>About Freelynk</h1>
+        <p>Freelynk is an innovative freelancing marketplace that connects talented professionals with clients worldwide. Our platform ensures secure transactions, seamless project management, and a thriving community of freelancers and businesses.</p>
+
+        <!-- Replace with actual image URL later -->
+        <img src="freelance.png" alt="Freelancer Collaboration" class="about-image">
+
+        <h2>Our Mission</h2>
+        <p>At Freelynk, our mission is to provide a platform that allows freelancers and businesses to collaborate efficiently, while offering tools that enhance productivity, transparency, and job satisfaction.</p>
+
+        <h2>Why Choose Freelynk?</h2>
+        <ul>
+            <li><strong>Security:</strong> We offer secure payment gateways to ensure that freelancers get paid promptly, and clients can be confident in their transactions.</li>
+            <li><strong>Global Reach:</strong> Our platform connects you with professionals and businesses from all around the world, increasing your reach and potential.</li>
+            <li><strong>Innovation:</strong> With AI-powered features like work quality checkers and dynamic pricing, we keep you ahead of the curve.</li>
+        </ul>
+
+        <h2>Join Our Growing Community</h2>
+        <p>Whether you are a freelancer looking to expand your client base or a business seeking top-tier talent, Freelynk is the place for you.</p>
+        <p><a href="signup.html">Sign up today</a> to start your journey with us!</p>
+    </div>
+
+</body>
+</html>

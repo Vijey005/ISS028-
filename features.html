@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Freelynk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Anonymous Pro', monospace;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .blue {
+            color: #1E3A8A;
+        }
+
+        .green {
+            color: #34D399;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .feature-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .feature-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            background-color: #fff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .feature-box img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        .feature-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #34D399;
+        }
+
+        .feature-content p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .feature-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .cta-btn {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-btn a {
+            background-color: #34D399;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="blue">Free</span><span class="green">lynk</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </nav>
+
+    <div class="feature-container">
+        <h1 class="feature-title">Our Features</h1>
+
+        <!-- Feature 1: Dynamic Pricing Model -->
+        <div class="feature-box">
+            <div class="feature-content">
+                <h2>Dynamic Pricing Model</h2>
+                <p>Our real-time AI-driven pricing system adjusts freelancer rates based on:</p>
+                <ul>
+                    <li>Market demand (e.g., SEO services in high demand increase pricing).</li>
+                    <li>Freelancer performance (e.g., better ratings, faster delivery = higher pay).</li>
+                    <li>Project complexity (e.g., advanced video editing costs more).</li>
+                </ul>
+                <p>This ensures fair pricing for both clients and freelancers, improving market efficiency.</p>
+            </div>
+            <img src="dynamic pricing.jpg" alt="Pricing Model">
+        </div>
+
+        <!-- Feature 2: Freelancer Collaboration Pods -->
+        <div class="feature-box">
+            <div class="feature-content">
+                <h2>Freelancer Collaboration Pods & Agency Formation</h2>
+                <p>Freelancers can team up to form small agencies (pods) for large-scale projects. Features include:</p>
+                <ul>
+                    <li>Team formation: A group of freelancers can work together on complex projects.</li>
+                    <li>Clients can hire an entire pod for better coordination.</li>
+                    <li>Revenue sharing system that splits earnings automatically.</li>
+                </ul>
+                <p>This encourages collaboration, helps freelancers win bigger projects, and gives clients an end-to-end solution.</p>
+            </div>
+            <img src="collab.png" alt="Freelancer Collaboration">
+        </div>
+
+        <!-- Feature 3: Verified AI-Powered Work Quality Checker -->
+        <div class="feature-box">
+            <div class="feature-content">
+                <h2>Verified AI-Powered Work Quality & Authenticity Checker</h2>
+                <p>AI-powered tools to scan freelancer submissions for:</p>
+                <ul>
+                    <li>Plagiarism detection ensuring original content.</li>
+                    <li>AI-generated content analysis preventing low-quality spam.</li>
+                    <li>Grammar, SEO, and design checks to enhance work quality.</li>
+                </ul>
+                <p>This builds trust and transparency while helping freelancers improve their work.</p>
+            </div>
+            <img src="ai bot.png" alt="AI Work Quality Checker">
+        </div>
+
+        <!-- Feature 4: Milestone-Based Payments -->
+        <div class="feature-box">
+            <div class="feature-content">
+                <h2>Milestone - Based Payments with Auto - Approval Timer</h2>
+                <p>Clients can approve payments in milestones, with auto-approval timer:</p>
+                <ul>
+                    <li>Clients approve payments at milestones (e.g., 25% after initial draft, etc.).</li>
+                    <li>If no response within a set time (e.g., 7 days), the milestone is auto-approved.</li>
+                </ul>
+                <p>This ensures timely payments, reduces disputes, and smoothens the workflow.</p>
+            </div>
+            <img src="payment.png" alt="Milestone Payments" style="float: left;">
+        </div>
+
+        <div class="cta-btn">
+            <a href="signup.html">Join Us Now</a>
+        </div>
+    </div>
+
+</body>
+</html>
